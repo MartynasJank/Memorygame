@@ -1,0 +1,208 @@
+/*CSS RESET*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+/*END OF CSS RESET*/
+
+body{
+    font-family: 'Oswald', 'Main font', 'Georgia', 'courier', 'arial', 'sans-serif';
+    text-align: center;
+}
+
+.field{
+    width: 30%;
+    padding: 30px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    background-color: #bdc3c7;
+    font-size: 0;
+}
+
+.field .card{
+    display: inline-block;
+    vertical-align: top;
+    width: 23%;
+    font-size: 25px;
+    background-color: #2ecc71;
+    color: #fff;
+    margin-bottom: 2.6%;
+    position: relative;
+    padding-top: 23%;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.field .card:hover{
+    background-color: #16a085;
+}
+
+.field .card .number{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+}
+
+.field .card:nth-of-type(4n + 2){
+    margin-right: 2.6%;
+    margin-left: 2.6%;
+}
+
+.field .card:nth-of-type(4n + 3){
+    margin-right: 2.6%;
+}
+
+.card.inactive{
+    background-color: #95a5a6;
+}
+
+.card.inactive:hover{
+    background-color: #95a5a6;
+}
+
+.allScores{
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+    line-height: 1.5;
+}
+
+.level{
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+    width: 40%;
+    font-size: 0;
+}
+
+.level .btn{
+    border: none;
+    padding: 15px;
+    background-color: #ecf0f1;
+    font-size: 24px;
+    width: 22%;
+    display: inline-block;
+    box-sizing: border-box;
+    transition: all 0.2s;
+    position: relative;
+    cursor: pointer;
+}
+
+.level .btn:nth-of-type(2){
+    margin: 0 3%;
+}
+
+.level .btn:nth-of-type(3){
+    margin-right: 3%;
+}
+
+.level .btn:hover{
+    background-color: #bdc3c7;
+}
+
+.level .btn.easy:hover{
+    background-color: #2ecc71;
+}
+
+.level .btn.normal:hover{
+    background-color: #f1c40f;
+}
+
+.level .btn.hard:hover{
+    background-color: #c0392b;
+}
+
+.level .btn .dropdown{
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    background-color: inherit;
+    line-height: 1.5;
+    width: 100%;
+}
+
+.level .btn:hover .dropdown{
+    display: block;
+}
+
+.result{
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
